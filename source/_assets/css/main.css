@@ -16,3 +16,29 @@ p {
     font-family: 'Kanit', sans-serif;
 }
 
+::selection {
+    background-color: #ffcc00; 
+    color: #ffffff;           
+  }
+  
+  ::-moz-selection {
+    background-color: #ffcc00; 
+    color: #ffffff;
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    border: 10px solid transparent;
+  }
+  ::-webkit-scrollbar-track:hover {
+    border: 12px solid rgba(0, 0, 0.5, 0.2);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: radial-gradient(at bottom right, #c7174f, #a84f2c, #407dd9);
+    border-radius: 50px;
+  }
+  

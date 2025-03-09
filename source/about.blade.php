@@ -1,9 +1,9 @@
 @extends('_layouts.main')
-
+@section('title', 'About - SMP')
 @section('body')
 
 
-@include('_layouts.partials.hero')
+
   
 
 @endsection

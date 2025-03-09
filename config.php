@@ -13,12 +13,12 @@ return [
            
         ],
         [
-            'label' => 'ABOUT US',
-            'url' => '/about',
-        ],
-        [
             'label' => 'PRODUCT',
             'url' => '/product',
+        ],
+        [
+            'label' => 'ABOUT US',
+            'url' => '/about',
         ],
        
     ],
