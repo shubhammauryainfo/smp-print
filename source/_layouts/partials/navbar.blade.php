@@ -14,8 +14,8 @@
           </svg>
         </button>
       </div>
-      <div class="items-center justify-between w-full hidden lg:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+      <div class="items-center justify-between w-full hidden  overflow-hidden lg:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium bg-[#ac8140] md:bg-transparent border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
           @if(!empty($page['menus']))
             @foreach ($page['menus'] as $menu)
               <li class="border-b md:border-0 border-gray-300">
@@ -45,11 +45,11 @@
     // Handle scroll event to change navbar background
     const handleScroll = () => {
       if (window.scrollY > 60) {
-        navbar.classList.add('bg-[#191A1E]', 'bg-opacity-85', 'backdrop-blur-md');
+        navbar.classList.add('bg-[#a47b58]', 'bg-opacity-85', 'backdrop-blur-md');
         navbar.classList.remove('bg-transparent');
       } else {
         navbar.classList.add('bg-transparent');
-        navbar.classList.remove('bg-[#191A1E]', 'bg-opacity-85', 'backdrop-blur-md');
+        navbar.classList.remove('bg-[#a47b58]', 'bg-opacity-85', 'backdrop-blur-md');
       }
     };
 
