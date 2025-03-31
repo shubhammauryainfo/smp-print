@@ -3,9 +3,6 @@
         |-- deploy.yml
 |-- .gitignore
 |-- .rnd
-|-- .vercel
-    |-- project.json
-    |-- README.txt
 |-- bootstrap.php
 |-- build_local
     |-- about
