@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: "pages-and-vercel"
   cancel-in-progress: false
 
 jobs:
@@ -19,14 +19,16 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    name: Build and Deploy
+    name: Build and Deploy Jigsaw Site
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Cache Composer vendor
+      # Step 2: Cache Composer dependencies (PHP vendor directory)
+      - name: Cache Composer Dependencies
         uses: actions/cache@v4
         with:
           path: vendor
@@ -34,7 +36,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-php
 
-      - name: Cache Bun node_modules
+      # Step 3: Cache Bun dependencies (node_modules directory)
+      - name: Cache Bun Dependencies
         uses: actions/cache@v4
         with:
           path: node_modules
@@ -42,33 +45,50 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node
 
-      - name: Setup PHP
+      # Step 4: Setup PHP environment
+      - name: Setup PHP Environment
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.3
           tools: composer:v2
           coverage: none
 
-      - name: Setup Bun
+      # Step 5: Setup Bun (JavaScript runtime)
+      - name: Setup Bun Environment
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
 
-      - name: Build Website
+      # Step 6: Install dependencies and build the Jigsaw site
+      - name: Build Jigsaw Website
         run: |
           bun install \
           && composer install \
           && bun run prod \
           && ./vendor/bin/jigsaw build production
 
-      - name: Setup Pages
+      # Step 7a: Configure GitHub Pages for deployment
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
+      # Step 7b: Upload the built site as an artifact for GitHub Pages deployment
+      - name: Upload Artifact for GitHub Pages Deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: './build_production'
 
+      # Step 7c: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # Step 8a: Install Vercel CLI for Vercel deployment
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
+      # Step 8b: Deploy to Vercel using CLI and secrets for authentication
+      - name: Deploy to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
