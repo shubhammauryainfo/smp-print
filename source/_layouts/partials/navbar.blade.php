@@ -16,15 +16,20 @@
       </div>
       <div class="items-center justify-between w-full hidden  overflow-hidden lg:flex md:w-auto md:order-1" id="navbar-sticky">
         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium bg-[#ac8140] md:bg-transparent border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-          @if(!empty($page['menus']))
-            @foreach ($page['menus'] as $menu)
               <li class="border-b md:border-0 border-gray-300">
-                <a href="{{ $page->baseUrl.$menu['url'] }}" class="block py-2 px-3 text-gray-200 rounded md:hover:bg-transparent font-semibold text-md md:hover:text-[#7a5c41] md:p-0">{{ $menu['label'] }}</a>
+                <a href="{{ $page->baseUrl}}" class="block py-2 px-3 text-gray-200 rounded md:hover:bg-transparent font-semibold text-md md:hover:text-[#7a5c41] md:p-0">HOME</a>
               </li>
-            @endforeach
-          @else
-            <p>No data available</p>
-          @endif
+              <li class="border-b md:border-0 border-gray-300">
+                <a href="{{ $page->baseUrl}}/product" class="block py-2 px-3 text-gray-200 rounded md:hover:bg-transparent font-semibold text-md md:hover:text-[#7a5c41] md:p-0">PRODUCT</a>
+              </li>
+              <li class="border-b md:border-0 border-gray-300">
+                <a href="{{ $page->baseUrl}}/about" class="block py-2 px-3 text-gray-200 rounded md:hover:bg-transparent font-semibold text-md md:hover:text-[#7a5c41] md:p-0">ABOUT</a>
+              </li>
+              <li class="border-b md:border-0 border-gray-300">
+                <a href="{{ $page->baseUrl}}/contact" class="block py-2 px-3 text-gray-200 rounded md:hover:bg-transparent md:hidden font-semibold text-md md:hover:text-[#7a5c41] md:p-0">CONTACT</a>
+              </li>
+           
+       
         </ul>
       </div>
     </div>

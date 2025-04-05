@@ -30,10 +30,10 @@
           <li><i class="fa-solid fa-map-location"></i> 123 Packaging St., Vasai, Palghar, India</li>
           <li>
             <div class="flex space-x-6 mt-2">
-              <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook fa-lg"></i></a>
-              <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
-              <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram fa-lg"></i></a>
-              <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" class="text-gray-400 hover:text-black transition-colors"><i class="fab fa-x-twitter fa-lg"></i></a>
+              <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors"><i class="fab fa-linkedin fa-lg"></i></a>
             </div>
           </li>
         </ul>
@@ -42,7 +42,7 @@
 
     <!-- Footer Bottom Section -->
     <div class="mt-8 border-t border-gray-700 pt-6 text-center lg:text-left flex flex-col lg:flex-row justify-center lg:justify-center items-center space-y-4 lg:space-y-0">
-      <p>SMP Print & Packaging Designed with <span class="text-red-500">❤️</span> by <strong>Nexbytes</strong></p>
+    &copy;  <p><script>document.write(new Date().getFullYear());</script> SMP Print & Packaging Designed with <span class="text-red-500">❤️</span> by <strong>Nexbytes</strong></p>
     </div>
   </div>
 </footer>

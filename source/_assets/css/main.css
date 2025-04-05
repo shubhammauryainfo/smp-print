@@ -16,6 +16,12 @@ p {
     font-family: 'Kanit', sans-serif;
 }
 
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-12 ;
+  }
+}
+
 ::selection {
     background-color: #ffcc00; 
     color: #ffffff;           

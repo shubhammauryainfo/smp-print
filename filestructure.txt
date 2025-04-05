@@ -65,6 +65,7 @@
     |-- _layouts
         |-- main.blade.php
         |-- partials
+            |-- after-nav.blade.php
             |-- favicon.blade.php
             |-- footer.blade.php
             |-- hero.blade.php

@@ -1,27 +1,11 @@
 @extends('_layouts.main')
 @section('title', 'About - SMP')
 @section('body')
+@include('_layouts.partials.after-nav', [
+    'title' => 'About SMP Print & Packaging',
+    'subtitle' => "We're dedicated to delivering premium print and packaging solutions that help brands stand out in a competitive marketplace."
+])
 
-<div class="btn-group-vertical" role="group" aria-label="">
-    <button type="button" class="btn btn-secondary">First One</button>
-    <button type="button" class="btn btn-secondary">Second One</button>
-    <div class="btn-group" role="group">
-        <button
-            id="dropdownId"
-            type="button"
-            class="btn btn-secondary dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-        >
-            More
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="#">First Dropdown</a>
-            <a class="dropdown-item" href="#">Second Dropdown</a>
-        </div>
-    </div>
-</div>
 
 
   
