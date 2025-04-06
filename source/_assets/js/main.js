@@ -7,7 +7,7 @@ AOS.init(
     {
         once: false, // animation happens every time you scroll up/down
         mirror: true,
-      duration: 1200,
+      duration: 800,
     }
   );
 

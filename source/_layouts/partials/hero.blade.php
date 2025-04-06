@@ -1,7 +1,7 @@
 <section class="relative py-20 bg-[#e2c7a9] min-h-screen">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center justify-between">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center mt-2 justify-between">
     <!-- Left Side: Text and Buttons -->
-    <div class="w-full lg:w-1/2 text-center lg:text-left text-white flex-col justify-center lg:items-start items-center">
+    <div class="w-full lg:w-1/2 text-center lg:text-left text-white flex-col justify-center lg:items-start items-center" data-aos="fade-right">
       <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight uppercase w-full">
         Your Complete Print & Packaging Partner
       </h1>
@@ -10,7 +10,7 @@
         Efficient, Reliable, and Expertly Crafted.
       </p>
       <div class="mt-8 flex justify-center lg:justify-start space-x-4">
-        <a href="{{$page->baseUrl}}/contact" class="bg-transparent text-[#7a5c41] px-6 py-3 rounded-lg border-2 font-bold border-gray-300 hover:bg-[#ff9700] transition">
+        <a href="{{$page->baseUrl}}/about" class="bg-transparent text-[#7a5c41] px-6 py-3 rounded-lg border-2 font-bold border-gray-300 hover:bg-[#ff9700] transition">
           Know More
         </a>
       </div>
