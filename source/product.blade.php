@@ -162,6 +162,43 @@ $products = [
     </div>
   </section>
 
+
+  {{-- material section --}}
+    <section class="py-20 bg-gray-100">
+        <div class="container-custom">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-smp-navy mb-4">
+              Quality Materials
+            </h2>
+            <p class="text-lg text-smp-dark-gray/80 max-w-3xl mx-auto">
+              We use only the highest quality materials to ensure durability, appearance, and sustainability.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+            <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="text-xl font-semibold text-smp-navy mb-3">Premium Paper & Cardboard</h3>
+              <p class="text-smp-dark-gray/80">
+                High-quality paper and cardboard materials in various weights and finishes
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-xl font-semibold text-smp-navy mb-3">Eco-Friendly Materials</h3>
+              <p class="text-smp-dark-gray/80">
+                Recycled, biodegradable, and compostable options for environmentally conscious brands
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+              <h3 class="text-xl font-semibold text-smp-navy mb-3">Specialty Finishes</h3>
+              <p class="text-smp-dark-gray/80">
+                Embossing, foil stamping, spot UV, and other premium finishing options
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
   
 
 @endsection
