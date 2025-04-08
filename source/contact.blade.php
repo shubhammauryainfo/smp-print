@@ -50,7 +50,7 @@
     <div class="container-custom">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {{-- Contact Form --}}
-            <div class="bg-smp-light-gray p-8 rounded-lg shadow-md" data-aos="fade-right">
+            <div class="bg-gray-100 p-8 rounded-lg shadow-md" data-aos="fade-right">
                 <h2 class="text-2xl md:text-3xl font-bold text-smp-navy mb-6">
                     Send Us a Message
                 </h2>
@@ -58,31 +58,34 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-2">
                             <label for="name" class="font-medium text-smp-navy">Full Name *</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full" />
+                            <input type="text" id="name" name="name" placeholder="Your name" required class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full rounded-lg p-2" />
                         </div>
+                       
                         <div class="space-y-2">
                             <label for="email" class="font-medium text-smp-navy">Email Address *</label>
-                            <input type="email" id="email" name="email" placeholder="Your email" required class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full" />
+                            <input type="email" id="email" name="email" placeholder="Your email" required class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full rounded-lg p-2" />
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-2">
                             <label for="phone" class="font-medium text-smp-navy">Phone Number</label>
-                            <input type="text" id="phone" name="phone" placeholder="Your phone number" class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full" />
+                            <input type="text" id="phone" name="phone" placeholder="Your phone number" class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full rounded-lg p-2" />
                         </div>
+                      
                         <div class="space-y-2">
                             <label for="company" class="font-medium text-smp-navy">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Subject" class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full" />
+                            <input type="text" id="subject" name="subject" placeholder="Subject" class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full rounded-lg p-2" />
                         </div>
                     </div>
 
                     <div class="space-y-2">
                         <label for="message" class="font-medium text-smp-navy">Message *</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your project or inquiry" required rows="6" class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full"></textarea>
+                        <textarea id="message" name="message" placeholder="Tell us about your project or inquiry" required rows="6" class="border-gray-300 focus:border-smp-teal focus:ring-smp-teal w-full rounded-lg p-2"></textarea>
                     </div>
+                    <input type="hidden" id="site" class="" name="site" value="SMP - packaging" />
 
-                    <button type="submit" id="submitBtn" class="bg-smp-teal hover:bg-smp-teal/90 text-white w-full py-6 transition duration-200">
+                    <button type="submit" id="submitBtn" class="bg-transparent text-[#7a5c41] px-6 py-3 rounded-lg border-2 font-bold border-gray-300 hover:bg-[#ff9700] transition ">
                         Send Message
                     </button>
                 </form>
@@ -100,11 +103,8 @@
 
                 <div class="space-y-6">
                     <div class="flex items-start">
-                        <div class="bg-smp-teal p-3 rounded-full text-white mr-4">
-                            {{-- Icon placeholder --}}
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M..." />
-                            </svg>
+                        <div class="bg-blue-600 p-3 rounded-full text-white mr-4">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
                         </div>
                         <div>
                             <h3 class="font-semibold text-smp-navy text-lg mb-1">Our Location</h3>
@@ -116,11 +116,8 @@
                     </div>
 
                     <div class="flex items-start">
-                        <div class="bg-smp-teal p-3 rounded-full text-white mr-4">
-                            {{-- Icon placeholder --}}
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M..." />
-                            </svg>
+                        <div class="bg-blue-600 p-3 rounded-full text-white mr-4">
+                            <i class="fas fa-envelope fa-2x"></i>
                         </div>
                         <div>
                             <h3 class="font-semibold text-smp-navy text-lg mb-1">Email Us</h3>
@@ -138,11 +135,8 @@
                     </div>
 
                     <div class="flex items-start">
-                        <div class="bg-smp-teal p-3 rounded-full text-white mr-4">
-                            {{-- Icon placeholder --}}
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M..." />
-                            </svg>
+                        <div class="bg-blue-600 p-3 rounded-full text-white mr-4">
+                            <i class="fas fa-phone fa-2x"></i>
                         </div>
                         <div>
                             <h3 class="font-semibold text-smp-navy text-lg mb-1">Call Us</h3>
@@ -160,11 +154,8 @@
                     </div>
 
                     <div class="flex items-start">
-                        <div class="bg-smp-teal p-3 rounded-full text-white mr-4">
-                            {{-- Icon placeholder --}}
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M..." />
-                            </svg>
+                        <div class="bg-blue-600 p-3 rounded-full text-white mr-4">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
                         </div>
                         <div>
                             <h3 class="font-semibold text-smp-navy text-lg mb-1">Business Hours</h3>
