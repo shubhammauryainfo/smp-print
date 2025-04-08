@@ -178,22 +178,42 @@ $products = [
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
             <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
               <h3 class="text-xl font-semibold text-smp-navy mb-3">Premium Paper & Cardboard</h3>
-              <p class="text-smp-dark-gray/80">
+              <p class="text-gray-800/80">
                 High-quality paper and cardboard materials in various weights and finishes
               </p>
             </div>
             <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
               <h3 class="text-xl font-semibold text-smp-navy mb-3">Eco-Friendly Materials</h3>
-              <p class="text-smp-dark-gray/80">
+              <p class="text-gray-800/80">
                 Recycled, biodegradable, and compostable options for environmentally conscious brands
               </p>
             </div>
             <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
               <h3 class="text-xl font-semibold text-smp-navy mb-3">Specialty Finishes</h3>
-              <p class="text-smp-dark-gray/80">
+              <p class="text-gray-800/80">
                 Embossing, foil stamping, spot UV, and other premium finishing options
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      {{-- call to action section --}}
+
+      <section class="py-16 bg-[#f6c06e] text-white">
+        <div class="container-custom text-center">
+          <div class="max-w-3xl mx-auto" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              Let's Create Your Perfect Packaging Solution
+            </h2>
+            <p class="text-lg mb-8 text-white/90">
+              Contact us today to discuss your project requirements and get a personalized quote.
+            </p>
+            <a 
+           class="bg-transparent text-[#7a5c41] px-6 py-3 rounded-lg border-2 font-bold border-gray-300 hover:bg-[#ff9700] transition"
+            href="{{$page->baseUrl}}/contact">
+                Contact Us Now</a>
           </div>
         </div>
       </section>

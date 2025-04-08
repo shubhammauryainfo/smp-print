@@ -42,7 +42,7 @@
 
     <!-- Footer Bottom Section -->
     <div class="mt-8 border-t border-gray-700 pt-6 text-center lg:text-left flex flex-col lg:flex-row justify-center lg:justify-center items-center space-y-4 lg:space-y-0">
-    &copy;  <p><script>document.write(new Date().getFullYear());</script> SMP Print & Packaging Designed with <span class="text-red-500">❤️</span> by <strong>Nexbytes</strong></p>
+    &copy;  <p><script>document.write(new Date().getFullYear());</script> SMP Print & Packaging Designed with <span class="text-red-500">❤️</span> by <strong><a href="https://nexbytes.rf.gd" target="_blank">Nexbytes</a></strong></p>
     </div>
   </div>
 </footer>
