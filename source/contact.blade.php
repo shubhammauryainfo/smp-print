@@ -91,7 +91,7 @@
                 </form>
             </div>
 
-            <div class="space-y-8" data-aos="fade-left">
+            <div class="space-y-8" data-aos="flip-right">
                 <div>
                     <h2 class="text-2xl md:text-3xl font-bold text-smp-navy mb-6">
                         Contact Information

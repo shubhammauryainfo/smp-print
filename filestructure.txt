@@ -24,6 +24,11 @@
                 |-- favicon.ico
                 |-- site.webmanifest
             |-- logo.png
+    |-- contact
+        |-- index.html
+    |-- index.html
+    |-- product
+        |-- index.html
 |-- bun.lock
 |-- composer.json
 |-- composer.lock
@@ -4232,8 +4237,5 @@
                             |-- x1d5.php
                             |-- x1d6.php
                             |-- x1d7.php
-                            |-- x1f1.php
-|-- webpack.mix.js
-                        |-- x1d7.php
                             |-- x1f1.php
 |-- webpack.mix.js

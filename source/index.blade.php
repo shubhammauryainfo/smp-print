@@ -101,7 +101,7 @@ $products = [
             Discover our range of high-quality packaging solutions designed for various industries.
           </p>
         </div>
-        <div class="mt-6 md:mt-0" data-aos="fade-up-left">
+        <div class="mt-6 md:mt-0" data-aos="fade-up">
          
             <a href="{{$page->baseUrl}}/product" class="bg-transparent text-[#7a5c41] px-6 py-3 rounded-lg border-2 font-bold border-gray-300 hover:bg-[#ff9700] transition gap-2">
               View All Products
@@ -168,7 +168,7 @@ $products = [
             </li>
           </ul>
         </div>
-        <div data-aos="fade-up-left">
+        <div data-aos="fade-up">
           <a href="{{$page->baseUrl}}/contact" class="bg-transparent text-[#7a5c41] px-6 py-3 rounded-lg border-2 font-bold border-gray-300 hover:bg-[#ff9700] transition">
            Get Started Today
           </a>        

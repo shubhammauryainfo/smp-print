@@ -105,7 +105,7 @@ $products = [
             class="rounded-lg shadow-lg w-full"
           />
         </div>
-        <div class="md:w-1/2" data-aos="fade-left">
+        <div class="md:w-1/2" data-aos="fade-up">
           <h2 class="text-3xl md:text-4xl font-bold text-smp-navy mb-6">
             Print Services
           </h2>
