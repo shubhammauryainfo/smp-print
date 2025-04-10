@@ -91,7 +91,7 @@ $coreValues = [
             Today, we combine traditional craftsmanship with cutting-edge technology to deliver packaging that not only protects your products but also tells your brand story.
           </p>
         </div>
-        <div class="md:w-1/2" data-aos="fade-left">
+        <div class="md:w-1/2" data-aos="flip-right">
           <img 
             src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Our Story" 
